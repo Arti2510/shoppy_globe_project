@@ -1,0 +1,24 @@
+/* src/components/ProductItem.css */
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card button {
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+/* src/components/CartItem.css */
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cart-buttons button {
+  padding: 5px 10px;
+  font-size: 1em;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

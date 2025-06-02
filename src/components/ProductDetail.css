@@ -1,0 +1,11 @@
+/* src/components/ProductDetail.css */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-detail img {
+  width: 300px;
+  height: auto;
+}
