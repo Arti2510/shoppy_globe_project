@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo"><img src="./public/images/image1.png" alt="header_image" height={'50px'} width={'50px'}/> ShoppyGlobe</div>
+      <div className="logo"><img src="./images/image1.png" alt="header_image" height={'30px'} width={'30px'}/> ShoppyGlobe</div>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/cart">🛒 Cart ({cartCount})</Link>

@@ -20,12 +20,21 @@ ShoppyGlobe is a simple e-commerce application built with **React**, **Redux**, 
 ## 📁 Folder Structure
 
 src/
-├── components/ # UI Components
-├── redux/ # Redux store and slice
-├── hooks/ # Custom hooks
-├── App.jsx # Main App component
-├── main.jsx # Entry point
-├── index.css # Global styles
+├── components/
+│   ├── Cart.jsx             # Displays items added to the cart with remove/total functionality <br/>
+│   ├── CartItem.jsx         # Represents individual item in the cart  <br/>
+│   ├── Header.jsx           # Navigation bar with links (Home, Cart, etc.)   <br/>
+│   ├── NotFound.jsx         # 404 Page displayed for undefined routes.   <br/>
+│   ├── ProductDetail.jsx    # Shows detailed info of a selected product.  <br/>
+│   ├── ProductItem.jsx      # UI for a single product item in the list. <br/>
+│   └── ProductList.jsx      # Renders the list of products fetched from API. <br/>
+│
+├── hooks/
+│   └── useFetchProducts.js  # Custom hook to fetch products from dummyjson.com API <br/>
+│
+├── redux/
+│   ├── cartSlice.js         # Redux slice for managing cart state (add/remove/total) <br/>
+│   └── store.js             # Configures Redux store and combines slices <br/>
 
 ---
 
@@ -43,7 +52,7 @@ src/
 
 
 # Clone the repository
-git clone https://github.com/your-username/shoppyglobe.git
+git clone https://github.com/Arti2510/shoppy_globe_project.git
 
 # Navigate into the folder
 cd shoppyglobe
