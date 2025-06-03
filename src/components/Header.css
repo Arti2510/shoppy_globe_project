@@ -1,11 +1,17 @@
 /* src/components/Header.css */
 .header {
+  position: fixed;         /* Fixes the header to the viewport */
+  top: 0;                  /* Aligns it to the top */
+  left: 0;
+  width: 97%;             /* Full width */
   background-color: #333;
   color: white;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;           /* Keeps it above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .header .logo {
@@ -16,3 +22,5 @@
   margin-left: 20px;
   color: white;
 }
+
+

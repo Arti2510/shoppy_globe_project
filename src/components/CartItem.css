@@ -7,6 +7,12 @@
   border: 1px solid #ddd;
   margin-bottom: 15px;
   border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02); /* Slightly increase size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: adds a subtle shadow */
 }
 
 .cart-item img {
@@ -37,4 +43,8 @@
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.remove-btn:active{
+  background: #d3727c;
 }

@@ -5,6 +5,12 @@
   padding: 15px;
   border-radius: 8px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: adds a subtle shadow */
 }
 
 .product-card img {
@@ -21,4 +27,8 @@
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.product-card button:active{
+  background: #59cb73;  
 }
