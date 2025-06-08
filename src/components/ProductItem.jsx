@@ -1,8 +1,7 @@
-// src/components/ProductItem.jsx
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../redux/cartSlice';
+import { addToCart } from '../utils/cartSlice';
 import './ProductItem.css';
 
 const ProductItem = ({ product }) => {

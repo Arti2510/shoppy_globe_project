@@ -1,5 +1,5 @@
-// src/components/ProductList.jsx
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import useFetchProducts from '../hooks/useFetchProducts';
 import ProductItem from './ProductItem';
 import './ProductList.css';

@@ -1,4 +1,4 @@
-/* src/components/CartItem.css */
+
 .cart-item {
   display: flex;
   gap: 20px;
@@ -11,8 +11,8 @@
 }
 
 .cart-item:hover {
-  transform: scale(1.02); /* Slightly increase size */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: adds a subtle shadow */
+  transform: scale(0.98); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .cart-item img {
@@ -33,7 +33,8 @@
 
 .cart-buttons button {
   padding: 5px 10px;
-  font-size: 1em;
+  font-size: 1em;  
+  cursor: pointer;
 }
 
 .remove-btn {

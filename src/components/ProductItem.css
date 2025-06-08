@@ -1,16 +1,16 @@
-/* src/components/ProductItem.css */
+
 .product-card {
   background: white;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .product-card:hover {
-  transform: scale(1.05); /* Slightly increase size */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: adds a subtle shadow */
+  transform: scale(0.95); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .product-card img {

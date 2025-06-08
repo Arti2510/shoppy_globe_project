@@ -1,11 +1,27 @@
-/* src/components/ProductDetail.css */
+
 .product-detail {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .product-detail img {
   width: 300px;
   height: auto;
+}
+
+.cartbtn{
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cartbtn:active{
+  background: #59cb73;  
 }

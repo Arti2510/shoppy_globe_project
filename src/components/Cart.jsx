@@ -1,8 +1,6 @@
-// src/components/Cart.jsx
-import React from 'react';
+
 import { useSelector } from 'react-redux';
 import CartItem from './CartItem';
-import './Cart.css';
 
 const Cart = () => {
   const cartItems = useSelector(state => state.cart.cartItems);
@@ -14,7 +12,7 @@ const Cart = () => {
 
   return (
     <div className="container">
-      <h2>Your Cart</h2>
+      <h2 style={{marginBottom:"20px"}}>Your Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (

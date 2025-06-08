@@ -1,8 +1,8 @@
-// src/components/ProductDetail.jsx
-import React, { useEffect, useState } from 'react';
+
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../redux/cartSlice';
+import { addToCart } from '../utils/cartSlice';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -27,7 +27,7 @@ const ProductDetail = () => {
         <p><strong>Brand:</strong> {product.brand}</p>
         <p>{product.description}</p>
         <p><strong>Price:</strong> ${product.price}</p>
-        <button onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
+        <button onClick={() => dispatch(addToCart(product))} className='cartbtn'>Add to Cart</button>
       </div>
     </div>
   );

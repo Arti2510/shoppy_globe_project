@@ -1,6 +1,6 @@
-// src/App.jsx
-import React, { Suspense, lazy } from 'react';
-import { Routes, Route } from 'react-router-dom';
+
+import { Suspense, lazy } from 'react';
+import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
 import Header from './components/Header';
 
 const ProductList = lazy(() => import('./components/ProductList'));
@@ -9,9 +9,25 @@ const Cart = lazy(() => import('./components/Cart'));
 const NotFound = lazy(() => import('./components/NotFound'));
 
 const App = () => {
+  const location = useLocation();
+
+  // Define valid routes here
+  const validRoutes = [
+    { path: '/' },
+    { path: '/cart' },
+    { path: '/product/:id' }
+  ];
+
+  // Check if current path matches any valid route
+  const isValidRoute = validRoutes.some(route =>
+    matchPath(route.path, location.pathname)
+  );
+
   return (
     <div>
-      <Header />
+      {/* Show Header only if valid route */}
+      {isValidRoute && <Header />}
+
       <main className="container">
         <Suspense fallback={<p>Loading...</p>}>
           <Routes>
@@ -27,3 +43,4 @@ const App = () => {
 };
 
 export default App;
+

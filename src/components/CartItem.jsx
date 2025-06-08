@@ -1,11 +1,6 @@
-// src/components/CartItem.jsx
-import React from 'react';
+
 import { useDispatch } from 'react-redux';
-import {
-  removeFromCart,
-  increaseQty,
-  decreaseQty,
-} from '../redux/cartSlice';
+import { removeFromCart, increaseQty, decreaseQty,} from '../utils/cartSlice';
 import './CartItem.css';
 
 const CartItem = ({ item }) => {

@@ -32,7 +32,7 @@ src/
 ├── hooks/
 │   └── useFetchProducts.js  # Custom hook to fetch products from dummyjson.com API <br/>
 │
-├── redux/
+├── utils/
 │   ├── cartSlice.js         # Redux slice for managing cart state (add/remove/total) <br/>
 │   └── store.js             # Configures Redux store and combines slices <br/>
 
